@@ -76,7 +76,7 @@ export default function ContactPage() {
           <div className="overflow-hidden rounded-xl border border-line shadow-soft">
             <iframe
               title="Benim Çiçekçim Konumu"
-              src="https://maps.google.com/maps?q=Ata+Cd.+No:20+Fatsa+Ordu+T%C3%BCrkiye&t=m&z=16&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Serdivan+Sakarya+T%C3%BCrkiye&t=m&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               className="min-h-[420px] w-full"

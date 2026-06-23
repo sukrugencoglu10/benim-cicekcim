@@ -10,7 +10,7 @@ export const site = {
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "905550000000",
   phone: "+90 555 000 0000",
   email: "siparis@benimcicekcim.com",
-  address: "Ata Cd. No:20, Fatsa / Ordu",
+  address: "Serdivan / Sakarya",
   social: {
     facebook: "#",
     instagram: "#",
