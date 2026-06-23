@@ -26,11 +26,11 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Kurumsal */}
-        <FooterCol title="Kurumsal" items={colKurumsal} />
-
-        {/* Teslimat */}
-        <FooterCol title="Teslimat" items={colTeslimat} />
+        {/* Kurumsal + Teslimat — mobilde yan yana ortalı, masaüstünde ayrı kolonlar */}
+        <div className="grid grid-cols-2 gap-6 text-center lg:contents lg:text-left">
+          <FooterCol title="Kurumsal" items={colKurumsal} />
+          <FooterCol title="Teslimat" items={colTeslimat} />
+        </div>
 
         {/* Bülten */}
         <div>
