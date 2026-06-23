@@ -25,7 +25,7 @@ export default function FeatureBar() {
         {features.map((f) => (
           <div
             key={f.title}
-            className="flex items-center gap-4 rounded-lg border border-line bg-cream px-6 py-5"
+            className="flex flex-col items-center gap-2 rounded-lg border border-line bg-cream px-6 py-5 text-center sm:flex-row sm:gap-4 sm:text-left"
           >
             <f.icon className="h-8 w-8 shrink-0 text-brand" />
             <div>

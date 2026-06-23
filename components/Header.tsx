@@ -4,9 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { nav, site } from "@/lib/config";
 import { SearchIcon } from "./Icons";
+import SearchOverlay from "./SearchOverlay";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
@@ -50,7 +52,11 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <button aria-label="Ara" className="text-ink transition-colors hover:text-brand">
+          <button
+            aria-label="Ara"
+            onClick={() => setSearchOpen(true)}
+            className="text-ink transition-colors hover:text-brand"
+          >
             <SearchIcon className="h-5 w-5" />
           </button>
         </nav>
@@ -58,11 +64,15 @@ export default function Header() {
         {/* Sağ arama (mobil) */}
         <button
           aria-label="Ara"
+          onClick={() => setSearchOpen(true)}
           className="text-ink transition-colors hover:text-brand lg:hidden"
         >
           <SearchIcon className="h-5 w-5" />
         </button>
       </div>
+
+      {/* Arama paneli (mobil + web) */}
+      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
 
       {/* Mobil açılır menü */}
       {open && (

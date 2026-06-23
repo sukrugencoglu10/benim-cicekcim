@@ -25,8 +25,8 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         </Link>
 
-        {/* Aksiyonlar — mobilde her zaman görünür, masaüstünde hover ile açılır */}
-        <div className="absolute inset-x-0 bottom-0 flex translate-y-0 items-center justify-center gap-2 p-2.5 opacity-100 transition-all duration-300 sm:p-3 lg:translate-y-3 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100">
+        {/* Aksiyonlar — sadece masaüstünde hover ile açılır (mobilde gizli) */}
+        <div className="absolute inset-x-0 bottom-0 hidden translate-y-3 items-center justify-center gap-2 p-3 opacity-0 transition-all duration-300 lg:flex lg:group-hover:translate-y-0 lg:group-hover:opacity-100">
           <a
             href={waLink(orderMsg)}
             target="_blank"
