@@ -76,13 +76,14 @@ export default function ContactPage() {
           <div className="overflow-hidden rounded-xl border border-line shadow-soft">
             <iframe
               title="Benim Çiçekçim Konumu"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=28.95%2C41.00%2C28.97%2C41.02&layer=mapnik&marker=41.01%2C28.96"
+              src="https://maps.google.com/maps?q=Ata+Cd.+No:20+Fatsa+Ordu+T%C3%BCrkiye&t=m&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               className="min-h-[420px] w-full"
               style={{ border: 0 }}
               loading="lazy"
               allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>
